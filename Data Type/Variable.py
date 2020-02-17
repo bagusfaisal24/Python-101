@@ -14,3 +14,4 @@ varA= 10
 varB = 5
 total  = varA+varB
 print('Jumlah total adalah {}'.format(total))
+
