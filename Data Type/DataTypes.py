@@ -27,4 +27,21 @@ if a > b:
 else:
     print("false")
 
+##type set
+thisset = {"Value 1","Value 2"}
+print(thisset)
+##type list
+list = ("value 1","value 2")
+print(list)
+
+## Python Dictionaries
+thisDict = {
+    "key 1":"value 1",
+    "key 2":"value 2"
+}
+print(thisDict)
+
+## Accessing key in dictionaries
+print(thisDict["key 1"])
+
 
