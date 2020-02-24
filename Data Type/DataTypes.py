@@ -28,20 +28,33 @@ else:
     print("false")
 
 ##type set
-thisset = {"Value 1","Value 2"}
+thisset = {"Value 1", "Value 2"}
 print(thisset)
 ##type list
-list = ("value 1","value 2")
+list = ("value 1", "value 2")
 print(list)
 
 ## Python Dictionaries
 thisDict = {
-    "key 1":"value 1",
-    "key 2":"value 2"
+    "key 1": "value 1",
+    "key 2": "value 2"
 }
 print(thisDict)
 
 ## Accessing key in dictionaries
 print(thisDict["key 1"])
 
+## apend data python
+data = [1, 2, 3, 4, 5]
+newArray = [6, 7, 8]
+data.append(newArray)
+newArray.append(9)
+print(data)
+
+## extend data in python
+data1 = [1,2,3,4]
+data2 = [4,5,6]
+data1.extend(data2)
+print(newArray)
+print(data1)
 
