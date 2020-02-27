@@ -1,35 +1,33 @@
-
-val = int(input("Silahkan pilih = "))
+list = list(("1. Penambahan", "2. Pengurangan", "3. Perkalian", "4. Pembagian"))
+print(list)
+val = int(input("Silahkan pilih Opsi = "))
 a = int(input("masukan angka ke 1 = "))
 b = int(input("masukan angka ke 2 = "))
 
-def pilihan(val):
-    switcher = {
-        1: penambahan(a,b)
-    }
-    return switcher.get(val, "ga ada pilihan")
-
 
 def penambahan(a, b):
+    return a + b
 
 
-    print( a + b)
+def pengurangan(a, b):
+    return a - b
 
-#
-# def pengurangan():
-#     a = input("masukan angka ke 1")
-#     b = input("masukan angka ke 2")
-#     print("hasil pengurangan", a - b)
-#
-#
-# def perkalian():
-#     a = input("masukan angka ke 1")
-#     b = input("masukan angka ke 2")
-#     print("Hasil perkalian", a * b)
-#
-#
-# def pembagian():
-#     a = input("masukan angka ke 1")
-#     b = input("masukan angka ke 2")
-#     print("Hasil pembagian", a / b)
 
+def perkalian(a, b):
+    return a * b
+
+
+def pembagian(a, b):
+    return a / b
+
+
+if val == int(1):
+    print(a, "ditambah", b, "=", penambahan(a, b))
+elif val == int(2):
+    print(a, "dikurangi", b, "=", pengurangan(a, b))
+elif val == int(3):
+    print(a, "dikali", b, "=", perkalian(a, b))
+elif val == int(4):
+    print(a, "dibagi", b, "=", pembagian(a, b))
+else:
+    print("Pilihan anda tidak ada")
